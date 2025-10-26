@@ -20,11 +20,12 @@ TARGET_CHAT_ID = int(os.getenv("TARGET_CHAT_ID"))
 MANGA_TITLE = os.getenv("MANGA_TITLE")
 
 
-CHAPTERS_DIR = os.path.expanduser('~/data')
+BASE_DIR = os.getcwd()
+CHAPTERS_DIR = os.path.join(BASE_DIR, 'data')
+PAGES_DIR = os.path.join(BASE_DIR, 'pages')
 
-PAGES_DIR = os.path.expanduser('~/pages')
 # ------------------------------------
-LOG_FILE = os.path.expanduser('~/downloader.log')
+LOG_FILE = os.path.join(BASE_DIR,'downloader.log')
 # ------------------------------------
 
 # Configuração do logging
