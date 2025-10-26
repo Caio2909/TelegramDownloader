@@ -17,7 +17,7 @@ API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
 SESSION_NAME = os.getenv("SESSION_NAME", "komga_session")
 TARGET_CHAT_ID = int(os.getenv("TARGET_CHAT_ID"))
-MANGA_TITLE = "One Piece"
+MANGA_TITLE = os.getenv("MANGA_TITLE")
 
 
 CHAPTERS_DIR = os.path.expanduser('~/data')
